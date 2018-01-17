@@ -1,8 +1,7 @@
 import React from "react";
-import { render } from 'react-dom';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
 
-import MadLib1 from './MadLib1';
+import MadLibs1 from './MadLib1';
 import MadLib2 from './MadLib2';
 import MadLib3 from './MadLib3';
 import MadLib4 from './MadLib4';
@@ -33,13 +32,16 @@ const Nav = props => (
   )
 
 class MadLibs extends React.Component {
+
+
+
         render(){
       return (
 
 
       <Switch>
           <Route exact path="/MadLibs" component={Nav} />
-        <Route path="/MadLibs/madLib1" component={MadLib1} />
+          <Route path="/MadLibs/madLib1" component={MadLibs1} />
         <Route path="/MadLibs/madLib2" component={MadLib2} />
         <Route path="/MadLibs/madLib3" component={MadLib3} />
         <Route path="/MadLibs/madLib4" component={MadLib4} />

@@ -12,12 +12,6 @@ import MadLibs from './MadLibs';
 class App extends React.Component {
   constructor() {
     super();
-
-
-    this.state = {
-      verbs: [],
-      nouns: [],
-    };
   }
 
 
